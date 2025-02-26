@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Assistant</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-    <div class="outercontainer">
-        <div class="header">
+    <div class="container">
+        <header class="header">
             <h1 class="title">Shopping Assistant</h1>
-        </div>
-        <div class="conversationcontainer" id="chatcontainer">
-            {% for entry in name_xyz %}
-            <div class="{% if entry.bot %}bot{% else %}user{% endif %}">
-                {% if entry.bot %}
-                {{ entry.bot }}
-                {% else %}
-                {{ entry.user }}
-                {% endif %}
-            </div>
-            {% endfor %}
-        </div>
-        <div class="inputcontainer">
-            <form action="/conversation" method="POST" class="inputform">
-                <input type="text" name="user_input_message" class="inputtextbox" placeholder="Type your message here...">
-                <button type="submit" class="submitbutton"></button>
-            </form>
-            <form action="/end_conversation" method="POST" class="endform">
-                <button type="submit" class="endbutton">End Conversation</button>
-            </form>
-        </div>
+        </header>
+
+        <main class="chat-section">
+            <section class="conversation-container" id="chat-container">
+                {% for entry in name_xyz %}
+                <article class="message {% if entry.bot %}bot-message{% else %}user-message{% endif %}">
+                    {{ entry.bot if entry.bot else entry.user }}
+                </article>
+                {% endfor %}
+            </section>
+
+            <section class="input-section">
+                <form action="/conversation" method="POST" class="chat-form">
+                    <input type="text" name="user_input_message" class="chat-input" placeholder="Type your message here..." required>
+                    <button type="submit" class="send-button" aria-label="Send Message"></button>
+                </form>
+
+                <form action="/end_conversation" method="POST" class="end-form">
+                    <button type="submit" class="end-button">End Conversation</button>
+                </form>
+            </section>
+        </main>
     </div>
+
     <script>
         function scrollToBottom() {
-            var chatContainer = document.getElementById('chatcontainer');
+            let chatContainer = document.getElementById('chat-container');
             chatContainer.scrollTop = chatContainer.scrollHeight;
         }
         window.onload = scrollToBottom;
