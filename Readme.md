@@ -199,6 +199,15 @@ To set up and run ShopAssist AI, follow these steps:
 
 ### 8.1 User Output Example Screenshots
 
+![Alt Text](https://raw.githubusercontent.com/ivineettiwari/Shop-Assist-2.0/refs/heads/main/Images/Screenshot%202025-02-26%20at%2010.26.17%E2%80%AFPM.png)
+
+![Alt Text](https://github.com/ivineettiwari/Shop-Assist-2.0/blob/main/Images/Screenshot%202025-02-26%20at%2010.26.53%E2%80%AFPM.png?raw=true)
+
+![Alt Text](https://github.com/ivineettiwari/Shop-Assist-2.0/blob/main/Images/Screenshot%202025-02-26%20at%2010.28.16%E2%80%AFPM.png?raw=true)
+
+![Alt Text](https://github.com/ivineettiwari/Shop-Assist-2.0/blob/main/Images/Screenshot%202025-02-26%20at%2010.31.28%E2%80%AFPM.png?raw=true)
+
+
 
 ---
 
