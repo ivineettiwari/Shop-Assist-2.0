@@ -1,0 +1,57 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Distribution/Packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.tar.gz
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+.env
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# mypy
+.mypy_cache/
+
+# Coverage reports
+.coverage
+*.coverage
+*.coveragerc
+
+# pipenv
+Pipfile.lock
+
+# pytest
+.cache
+
+# Docker
+docker-compose.yml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Linux
+*~
+
+# pyenv
+.python-version
